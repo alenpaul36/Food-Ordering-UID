@@ -1,0 +1,339 @@
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+/*------GLOBAL------*/
+html {
+	width: 100%;
+	height: 100%;
+}
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0 none;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	/*font-family: 'Lobster Two', cursive;*/
+	font-weight: 300;
+	color: #6d6e71;
+	line-height: 24px;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	color: #507cbe;
+	text-decoration: none;
+}
+.wrapper {
+	position: relative;
+	width: 100%;
+	display: block;
+	clear: both;
+}
+h1, h2, h3, h4, h5 {
+	font-size: 24px;
+	line-height: 125%;
+	color: #000000;
+}
+a:hover, a:focus {
+	text-decoration: underline;
+}
+nav {
+	width: 50%;
+	float: left;
+	display: block;
+	margin: 0;
+	z-index: 15;
+}
+header {
+	padding: 25px 0 30px;
+	border-top: 5px solid #5bbd50;
+}
+.contact {
+	font-size: 20px;
+	float: right;
+	font-weight: 400;
+}
+.number a {
+	color: #F00;
+	margin-left: 10px;
+}
+.time {
+	font-size: 15px;
+	color: #727272;
+	margin-left: 10px;
+}
+.saction1 {
+	background-color: #f1f1f1;
+	margin-top: 30px;
+}
+.menu li {
+	float: left;
+	padding: 20px 5px 20px;
+}
+.menu a {
+	text-transform: uppercase;
+	color: #494949;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	padding-right: 15px;
+	border-right: 1px solid #CCCCCC;
+	transition: all 0.3s;
+}
+.menu a:hover {
+	color: tomato;
+	font-size: 18px;
+}
+.menu li:last-child a {
+	border: 0;
+}
+.login {
+	width: 50%;
+	float: right;
+	display: block;
+}
+.login li {
+	float: left;
+}
+.login ul {
+	float: right;
+	padding: 20px 5px 20px;
+}
+.login a {
+	color: #494949;
+	margin-left: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	padding-right: 15px;
+	border-right: 1px solid #CCCCCC;
+	transition: all 0.3s;
+}
+.login li:last-child a {
+	border: 0;
+}
+.login a:hover 
+{
+	font-size: 20px;
+	color: #69c15f;
+}
+.saction3 {
+	padding: 50px 0 50px;
+	position: relative;
+}
+.ordaring h2 {
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+	color: #515151;
+	font-size: 35px;
+	font-weight: 700;
+}
+.ordaring p {
+	text-align: center;
+	font-family: Verdana;
+	margin-top: 15px;
+	color: #e24425;
+	font-size: 30px;
+}
+.arrow, .arrow1 {
+	position: absolute;
+	top: 52%;
+	right: -38px;
+}
+.step img {
+	text-align: center;
+	display: block;
+	margin: 50px auto;
+}
+.step1 img {
+	text-align: center;
+	display: block;
+	margin: 50px auto;
+}
+.saction4 {
+	background-color: #f1f1f1;
+	padding: 60px 0 60px;
+}
+.special h2 {
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #515151;
+	font-size: 35px;
+	font-weight: 700;
+}
+.dotted3 {
+	border: 1px dashed #515151;
+	width: 27%;
+	display: inline-block;
+	top: 50%;
+	position: absolute;
+	left: 12%;
+}
+.dotted4 {
+	border: 1px dashed #515151;
+	width: 27%;
+	display: inline-block;
+	top: 50%;
+	position: absolute;
+	right: 12%;
+}
+.slider {
+	background-color: #FFF;
+	padding: 15px;
+	border-radius: 5px;
+	margin: 40px 0;
+}
+.img {
+	width: 50%;
+	float: left;
+}
+.title {
+	float: right;
+	width: 50%
+}
+.title h3 {
+	margin: 10px 5px 15px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #5bbd50;
+}
+.title p {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 16px;
+	margin: 0 5px 15px;
+}
+.title a {
+	text-decoration: none;
+	background-color: #e24425;
+	color: #FFF;
+	font-size: 14px;
+	padding: 8px;
+	border-radius: 5px;
+	margin: 0 5px;
+	font-weight: 400;
+}
+
+.saction5 
+{
+	padding: 60px 0;
+}
+.restaurants h3 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+	color: #515151;
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.rest a {
+	display : block;
+	width : 165px;
+	height : 113px;
+}
+.rest
+{
+	padding-top: 40px;
+}
+.food h3 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+	color: #515151;
+	font-size: 35px;
+	font-weight: 700;
+}
+.order a {
+	text-decoration: none;
+	color: #515151;
+	transition: all 0.3s;
+	font-weight: 700;
+}
+.order a:hover {
+	color: tomato;
+}
+.order {
+	background-color: #f1f1f1;
+	width: 170px;
+	margin-top: -8px;
+	padding: 10px;
+	text-align: center;
+	font-weight: 700;
+	border-radius: 0px 0 8px 8px;
+	border: 1px solid #DADADA;
+}
+.food1 {
+	padding: 40px 0 10px;
+}
+.saction6 {
+	border-top: 2px solid #CCC;
+}
+.bg {
+	height: 150%;
+	width: 100%;
+	margin: 50px 0 50px;
+	border-radius: 10px;
+	background-color: brown;
+}
+.images h3 {
+	font-family: Calibri Body;
+	color: whitesmoke;
+	font-size: 30px;
+	padding: 30px 0;
+	font-weight: 100;
+}
+
+.imgs img {
+	margin-top: 10px;
+}
+.button {
+	background-color: rgb(29, 31, 29);
+	margin: 45px 20px;
+	padding: 10px;
+	border: 2px solid #FFF;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.button a {
+	color: #FFF;
+	font-weight: 700;
+	font-size: 15px;
+	text-align: center;
+	margin: 0 auto;
+	text-decoration: none;
+}
+.saction7 {
+	border-top: 2px solid #CCC;
+	padding: 50px 0 40px;
+}
+.service {
+	width: 40%;
+	float: left;
+}
+.det {
+	width: 60%;
+	float: right;
+}
+
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/triangle.svg) center no-repeat #000;
+}
+
+
+
+	

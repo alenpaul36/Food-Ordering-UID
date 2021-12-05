@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {   
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:table;
+}
+body {
+    display:table-cell;
+    vertical-align:middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background:url(https://miro.medium.com/max/1400/1*iBebVuGHJ8Gqoo-LTzCbAg.png)
+}
+form {
+    display:table;
+    margin:auto;
+	max-width: 500px;
+	border: 3px solid #f1f1f1;
+	border-radius: 15px;
+	border-color: red;
+	background-color: white;
+}
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+label{
+	font-family:Arial, sans-serif;
+	font-size: 15px;
+}
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 20px;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.btn {
+	background-color: white;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: solid;
+	cursor: pointer;
+	width: 100%;
+	
+}
+
+.container {
+	padding: 20px;
+}
+
+span.psl {
+	float: left;
+	padding-top: 16px;
+}
+span.psr {
+	float: right;
+	padding-top: 16px;
+}
+img {
+     vertical-align:middle;
+}
+h2{
+	font-family: Arial, sans-serif;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+  }
+	.cancelbtn {
+		width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<form onsubmit="return valid()" method=get action="index.html">
+<h2> &nbsp;&nbsp;&nbsp;&nbsp;Sign up </h2> 
+<div class="container">
+    <input type="text" placeholder="Full Name" name="uname" id="uname" >
+    <input type="text" placeholder="Email" name="mail" id="mail" >
+    <label>
+      <input type="checkbox" name="t&c" id="tc"> I agree to Tomato's Terms of Service, Privacy Policy and Content Policies
+    </label>
+    <button type="submit" >Create Account</button>
+	<h4><center><hr style="height:1px;border-top:1px solid #f00;width:40%;float:left ">or<hr style="height:1px;border-top:1px solid #f00;width:40%;float:right "></center></h4>
+    <button class="btn" onclick="location.href='index.html'"><center><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" height ="25" width="25" /> Continue with Google</center></button>
+	<h3>Already have an account? <br><a href="Login.html">Log In</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><a href="index.html">Continue as Guest-></a></h3>
+</div>
+</form>
+<script>
+function valid()
+{
+	var u = document.getElementById('uname');
+	var m = document.getElementById('mail');
+	var t = document.getElementById('tc');
+	if(u.value == "")
+	{
+		alert("Required!");
+		return false;
+	}
+	if(m.value == "")
+	{
+		alert("Required!");
+		return false;
+	}
+	var atpos = m.value.indexOf("@");
+	var dotpos = m.value.lastIndexOf(".");
+	if( m.value == "" || atpos < 1 || ( dotpos - atpos < 2 ) )
+	{
+		alert("Please enter a valid email address");
+		return false;
+	}
+	if(!t.checked)
+	{
+		alert("Terms not checked");
+		return false;
+	}
+	
+}
+</script>
+</body>
+</html>

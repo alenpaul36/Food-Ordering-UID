@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html 
+{   
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:table;
+}
+body 
+{
+    display:table-cell;
+    vertical-align:middle;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url(https://miro.medium.com/max/1400/1*iBebVuGHJ8Gqoo-LTzCbAg.png);
+}
+form {
+    display:table;
+    margin:auto;
+	max-width: 500px;
+	border: 3px solid #f1f1f1;
+	border-radius: 15px;
+	border-color: red;
+	background-color: white;
+}
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 20px;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.btn {
+	background-color: white;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: solid;
+	cursor: pointer;
+	width: 100%;
+	
+}
+
+.container {
+	padding: 20px;
+}
+
+span.psl {
+	float: left;
+	padding-top: 16px;
+}
+span.psr {
+	float: right;
+	padding-top: 16px;
+}
+img {
+     vertical-align:middle;
+}
+h2{
+	font-family: Arial, sans-serif;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+  }
+	.cancelbtn {
+		width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<form onsubmit="return valid()" method=get action="index.html">
+<h2> &nbsp;&nbsp;&nbsp;&nbsp;Log In </h2> 
+<div class="container">
+    <input type="text" placeholder="Phone Number" name="phone" id="phone">
+    <button type="submit">Send OTP</button>
+	<h4><center><hr style="height:1px;border-top:1px solid #f00;width:40%;float:left ">or<hr style="height:1px;border-top:1px solid #f00;width:40%;float:right "></center></h4>
+    <button type="submit" class="btn" onclick="location.href='index.html'"><center><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" height ="25" width="25" /> Continue with Google</center></button>
+	<button type="submit" class="btn" onclick="location.href='index.html'"><center><img src="data:image/jpeg;base64,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" height ="25" width="25" /> Continue with Facebook</center></button>
+	<h3>New to Tomato? <a href="Signup.html">Signup</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="index.html">Continue as Guest -></a></h3>
+</div>
+	
+
+</form>
+<script>
+function valid()
+{
+	var p = document.getElementById('phone');
+    var a = /^\d{10}$/;  
+	if(p.value == "")
+	{
+		alert("Required!");
+		return false;
+	}
+	if(!p.value.match(phoneno))
+	{
+		alert("Invalid Phone Number!");
+		return false;
+	}
+}
+</script>
+</body>
+</html>

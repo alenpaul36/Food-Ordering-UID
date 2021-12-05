@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Orders</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="left-text"> <img src="https://www.pngkit.com/png/detail/322-3223817_rotten-tomatoes-logo-png.png"  alt="logo" class="tomato-logo">            </div>
+            <h2 id="orders-checkout">Order Checkout</h2>
+            <nav>
+                <div class="menu-item-1">
+                <ul id="menu-items">
+                        <i id="help-icon" class="far fa-life-ring fa-lg"></i>
+                        <li><a href="#" style="padding-right: 1rem;">Help</a></li>
+                        <i class="far fa-user"></i>
+                        <li><a href="#">Tony Stark</a></li>    
+                </ul>
+            </div>
+
+            </nav>
+            <img src="img/burger.png" alt="Ham" class="menu-icon" onclick="toggle()">
+        </div>
+        <div class="order"> </div>
+        <div class="content">
+            <div class="left-content">
+                <h1 id="Address-Title">Select delivery address</h1>
+                <p class="subtext">You have a saved address in this location.</p>  
+                
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        
+                        <div class="address-1">
+                            <div class="imgDiv">
+                                <img src="img/home.png" alt="Home" class="address-icon">
+                            </div>
+                            <div class="address-content">
+                                <h3 class="address-title">Home</h3>
+                                <p  class="subtext">New York</p>
+                                <p  class="subtext">123 Main Street</p>
+                                <p  class="subtext">New York, NY 10001</p>
+                                <p  class="subtext">(212) 555-1234</p>    
+                            
+                                <br>
+                            
+                                <h4>49 MINS</h4>
+                            
+                                <button id="del-here" type="submit">Deliver Here</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="address-1">
+                            <div class="imgDiv">
+                                <img src="img/add-location-point.png" alt="Add Location" class="address-icon">
+                            </div>
+                            <div class="address-content">
+                                <h3 class="address-title">Add Address</h3>
+                                <p  class="subtext">New York</p>
+                                <p  class="subtext">123 Main Street</p>
+                                <p  class="subtext">New York, NY 10001</p>
+                                <p  class="subtext">(212) 555-1234</p>    
+                            
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                
+                                <button id="del-here" type="submit">Deliver Here</button>
+                            
+                            </div>
+                        
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            
+            <div class="right-content">
+                
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/5513761505.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            var MenuItems = document.getElementById("menu-items");
+            MenuItems.style.maxHeight = "0px";
+
+            function toggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "300px";
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>
