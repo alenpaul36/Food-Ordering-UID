@@ -1,0 +1,215 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+nav {
+    flex: 2;
+    text-align: right;
+    padding-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.menu-icon {     
+    width: 28px;    
+    margin-left: 20px;     
+    display: none; 
+}
+
+
+
+/* content */
+
+#orders-checkout {
+    vertical-align: middle;
+    padding-top: 1rem;
+}
+
+/* tomato logo */
+
+.tomato-logo {
+    width: 100px;
+    height: 65px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    vertical-align: middle;
+    z-index: -1;
+}
+
+/* tomato logo ends*/
+
+.menu-item-1 {
+    margin-bottom: 1rem;
+}
+
+#menu-items > li > a   
+{
+    padding-bottom: 4.5rem;
+    text-decoration:none;
+    color: darkslategrey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+.order {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.content {
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.subtext {
+    margin-bottom: -1rem;
+}
+
+/* left content */
+.left-content {
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-right: 35rem;
+    padding-left: 20px;
+    width: 100%;
+}
+
+
+/* Address-1 */
+
+.imgDiv {
+    padding-top: 1rem;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.address-icon {
+    padding-top: 1rem;
+    width: 30px;
+    position: absolute;
+}
+
+.address-content {
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    width: 100%;
+}
+
+#Address-Title {
+    margin-bottom: -1rem;
+}
+
+
+#address-title {
+    margin-bottom: -1rem;
+}
+
+.address-1 {
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+}
+
+#del-here {
+    background-color: #60B246;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    font-size: 12px;
+    width: 110px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+}
+
+
+
+@media only screen 
+and (max-width: 599px)
+and (min-width: 300px) {
+    .menu-icon {
+        display: block;
+        opacity: 100%;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: green;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        opacity: 100%;
+        z-index: 5;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        opacity: 100%;
+    }
+    nav ul li a {
+        color: #fff;
+        opacity: 100%;
+    }
+.menu-icon {
+        display: block;
+        opacity: 100%;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
